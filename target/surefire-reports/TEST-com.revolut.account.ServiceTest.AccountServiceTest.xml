@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="7" failures="1" name="com.revolut.account.ServiceTest.AccountServiceTest" time="1.276" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="10.0.2+13"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/01204319/eclipse-workspace_Test/account-transfer"/>
+    <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/01204319/eclipse-workspace_Test/account-transfer"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="10.0.2+13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/pf/_c8rt1ps5k33sqvlds_d_m9css9j33/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/01204319/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="54.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.6"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.4/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/01204319"/>
+    <property name="user.timezone" value="Asia/Tokyo"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="10"/>
+    <property name="user.name" value="01204319"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.4/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="10"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="10.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.5.4/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2018-07-17"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.3"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testCreateAccount" time="0.985"/>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testWithdraw" time="0.128"/>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testWithdrawAmountCantBeGreaterThanBalance" time="0.039">
+    <failure message="Should not withdraw" type="java.lang.AssertionError">java.lang.AssertionError: Should not withdraw
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.revolut.account.ServiceTest.AccountServiceTest.assertWithdrawFails(AccountServiceTest.java:126)
+	at com.revolut.account.ServiceTest.AccountServiceTest.testWithdrawAmountCantBeGreaterThanBalance(AccountServiceTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>2019-03-20T16:48:02,642 INFO  com.revolut.account.service.impl.AccountServiceImpl AccountServiceImpl.java:24 - Account creation started
+2019-03-20T16:48:02,643 TRACE org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl SessionFactoryImpl.java:1192 - Opening Hibernate Session.  tenant=null, owner=null
+2019-03-20T16:48:02,643 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:281 - Opened Session [520c79e1-5e2b-435b-b3df-fd723d5cd8f6] at timestamp: 15530680826
+2019-03-20T16:48:02,643 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl TransactionImpl.java:55 - begin
+2019-03-20T16:48:02,643 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:65 - Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+2019-03-20T16:48:02,643 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:68 - Transaction begun via JDBC Connection.setAutoCommit(false)
+2019-03-20T16:48:02,643 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:140 - ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+2019-03-20T16:48:02,643 TRACE org.hibernate.event.internal.AbstractSaveEventListener AbstractSaveEventListener.java:501 - Transient instance of: com.revolut.account.model.Account
+2019-03-20T16:48:02,643 TRACE org.hibernate.event.internal.DefaultPersistEventListener DefaultPersistEventListener.java:183 - Saving transient instance
+2019-03-20T16:48:02,644 TRACE org.hibernate.event.internal.AbstractSaveEventListener AbstractSaveEventListener.java:157 - Saving [com.revolut.account.model.Account#&lt;null&gt;]
+2019-03-20T16:48:02,644 TRACE org.hibernate.engine.spi.ActionQueue ActionQueue.java:298 - Adding an EntityIdentityInsertAction for [com.revolut.account.model.Account] object
+2019-03-20T16:48:02,644 TRACE org.hibernate.engine.spi.ActionQueue ActionQueue.java:248 - Executing inserts beforeQuery finding non-nullable transient entities for early insert: [EntityIdentityInsertAction[com.revolut.account.model.Account#&lt;null&gt;]]
+2019-03-20T16:48:02,644 TRACE org.hibernate.engine.spi.ActionQueue ActionQueue.java:253 - Adding insert with no non-nullable, transient entities: [EntityIdentityInsertAction[com.revolut.account.model.Account#&lt;null&gt;]]
+2019-03-20T16:48:02,644 TRACE org.hibernate.engine.spi.ActionQueue ActionQueue.java:270 - Executing insertions beforeQuery resolved early-insert
+2019-03-20T16:48:02,644 DEBUG org.hibernate.engine.spi.ActionQueue ActionQueue.java:272 - Executing identity-insert immediately
+2019-03-20T16:48:02,644 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:2824 - Inserting entity: com.revolut.account.model.Account (native id)
+2019-03-20T16:48:02,645 DEBUG org.hibernate.SQL SqlStatementLogger.java:92 - 
+    insert 
+    into
+        accounts
+        (id, balance, owner) 
+    values
+        (null, ?, ?)
+Hibernate: 
+    insert 
+    into
+        accounts
+        (id, balance, owner) 
+    values
+        (null, ?, ?)
+2019-03-20T16:48:02,645 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:55 - Registering statement [prep21: insert into accounts (id, balance, owner) values (null, ?, ?)]
+2019-03-20T16:48:02,645 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:2640 - Dehydrating entity: [com.revolut.account.model.Account#&lt;null&gt;]
+2019-03-20T16:48:02,645 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:65 - binding parameter [1] as [NUMERIC] - [0]
+2019-03-20T16:48:02,645 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:53 - binding parameter [2] as [VARCHAR] - [null]
+2019-03-20T16:48:02,646 DEBUG org.hibernate.id.IdentifierGeneratorHelper IdentifierGeneratorHelper.java:78 - Natively generated identity: 3
+2019-03-20T16:48:02,646 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:91 - Releasing result set [rs20: org.h2.result.LocalResult@37637a24 columns: 1 rows: 1 pos: 0]
+2019-03-20T16:48:02,646 DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:104 - HHH000387: ResultSet&apos;s statement was not registered
+2019-03-20T16:48:02,646 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:132 - Closing result set [rs20: org.h2.result.LocalResult@37637a24 columns: 1 rows: 1 pos: 0]
+2019-03-20T16:48:02,647 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:68 - Releasing statement [prep21: insert into accounts (id, balance, owner) values (null, ?, ?) {1: 0, 2: NULL}]
+2019-03-20T16:48:02,647 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:148 - Closing prepared statement [prep21: insert into accounts (id, balance, owner) values (null, ?, ?) {1: 0, 2: NULL}]
+2019-03-20T16:48:02,647 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,647 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl TransactionImpl.java:66 - committing
+2019-03-20T16:48:02,647 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:144 - ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+2019-03-20T16:48:02,648 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:2381 - SessionImpl#beforeTransactionCompletion()
+2019-03-20T16:48:02,648 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:474 - Automatically flushing session
+2019-03-20T16:48:02,648 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:67 - Flushing session
+2019-03-20T16:48:02,648 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:132 - Processing flush-time cascades
+2019-03-20T16:48:02,648 TRACE org.hibernate.engine.internal.Cascade Cascade.java:80 - Processing cascade ACTION_PERSIST_ON_FLUSH for: com.revolut.account.model.Account
+2019-03-20T16:48:02,648 TRACE org.hibernate.engine.internal.Cascade Cascade.java:130 - Done processing cascade ACTION_PERSIST_ON_FLUSH for: com.revolut.account.model.Account
+2019-03-20T16:48:02,648 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:174 - Dirty checking collections
+2019-03-20T16:48:02,648 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:189 - Flushing entities and processing referenced collections
+2019-03-20T16:48:02,649 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:232 - Processing unreferenced collections
+2019-03-20T16:48:02,649 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:249 - Scheduling collection removes/(re)creates/updates
+2019-03-20T16:48:02,649 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:106 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2019-03-20T16:48:02,649 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:113 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2019-03-20T16:48:02,649 DEBUG org.hibernate.internal.util.EntityPrinter EntityPrinter.java:102 - Listing entities:
+2019-03-20T16:48:02,650 DEBUG org.hibernate.internal.util.EntityPrinter EntityPrinter.java:109 - com.revolut.account.model.Account{owner=null, balance=0, id=3}
+2019-03-20T16:48:02,650 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:325 - Executing flush
+2019-03-20T16:48:02,650 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,650 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:357 - Post flush
+2019-03-20T16:48:02,650 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl SynchronizationRegistryStandardImpl.java:55 - SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+2019-03-20T16:48:02,650 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:78 - Preparing to commit transaction via JDBC Connection.commit()
+2019-03-20T16:48:02,651 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:81 - Transaction committed via JDBC Connection.commit()
+2019-03-20T16:48:02,651 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:53 - LogicalConnection#afterTransaction
+2019-03-20T16:48:02,651 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,651 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:154 - Initiating JDBC connection release from afterTransaction
+2019-03-20T16:48:02,651 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,651 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:162 - ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+2019-03-20T16:48:02,651 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl DelegatingBasicLogger.java:159 - SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+2019-03-20T16:48:02,652 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:53 - LogicalConnection#afterTransaction
+2019-03-20T16:48:02,652 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,652 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:154 - Initiating JDBC connection release from afterTransaction
+2019-03-20T16:48:02,652 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:2394 - SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+2019-03-20T16:48:02,652 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:401 - Closing session [520c79e1-5e2b-435b-b3df-fd723d5cd8f6]
+2019-03-20T16:48:02,652 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:173 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@31e76a8d]
+2019-03-20T16:48:02,652 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,653 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:230 - Closing logical connection
+2019-03-20T16:48:02,653 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:237 - Logical connection closed
+2019-03-20T16:48:02,653 INFO  com.revolut.account.service.impl.AccountServiceImpl AccountServiceImpl.java:31 - Account created with id=3
+2019-03-20T16:48:02,653 TRACE org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl SessionFactoryImpl.java:1192 - Opening Hibernate Session.  tenant=null, owner=null
+2019-03-20T16:48:02,653 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:281 - Opened Session [5bb2ff40-2b09-493f-9973-6e97fdc880f6] at timestamp: 15530680826
+2019-03-20T16:48:02,653 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl TransactionImpl.java:55 - begin
+2019-03-20T16:48:02,654 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:65 - Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+2019-03-20T16:48:02,654 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:68 - Transaction begun via JDBC Connection.setAutoCommit(false)
+2019-03-20T16:48:02,654 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:140 - ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+2019-03-20T16:48:02,654 TRACE org.hibernate.event.internal.DefaultLoadEventListener DefaultLoadEventListener.java:254 - Loading entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,654 TRACE org.hibernate.event.internal.DefaultLoadEventListener DefaultLoadEventListener.java:435 - Attempting to resolve: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,654 TRACE org.hibernate.event.internal.DefaultLoadEventListener DefaultLoadEventListener.java:473 - Object not resolved in any cache: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,654 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:4000 - Fetching entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,655 DEBUG org.hibernate.SQL SqlStatementLogger.java:92 - 
+    select
+        account0_.id as id1_0_0_,
+        account0_.balance as balance2_0_0_,
+        account0_.owner as owner3_0_0_ 
+    from
+        accounts account0_ 
+    where
+        account0_.id=?
+Hibernate: 
+    select
+        account0_.id as id1_0_0_,
+        account0_.balance as balance2_0_0_,
+        account0_.owner as owner3_0_0_ 
+    from
+        accounts account0_ 
+    where
+        account0_.id=?
+2019-03-20T16:48:02,655 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:55 - Registering statement [prep22: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=?]
+2019-03-20T16:48:02,655 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:333 - Registering last query statement [prep22: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=?]
+2019-03-20T16:48:02,655 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:65 - binding parameter [1] as [BIGINT] - [3]
+2019-03-20T16:48:02,655 TRACE org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader AbstractLoadPlanBasedLoader.java:287 - Bound [2] parameters total
+2019-03-20T16:48:02,655 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:182 - Registering result set [rs21: org.h2.result.LocalResult@6dd1f638 columns: 3 rows: 1 pos: -1]
+2019-03-20T16:48:02,656 TRACE org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl ResultSetProcessorImpl.java:117 - Processing result set
+2019-03-20T16:48:02,656 DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl ResultSetProcessorImpl.java:120 - Starting ResultSet row #0
+2019-03-20T16:48:02,656 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl EntityReferenceInitializerImpl.java:126 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-03-20T16:48:02,656 TRACE org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl EntityReferenceInitializerImpl.java:227 - hydrating entity state
+2019-03-20T16:48:02,656 TRACE org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl EntityReferenceInitializerImpl.java:279 - Initializing object from ResultSet: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,656 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:2705 - Hydrating entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,656 TRACE org.hibernate.type.descriptor.sql.BasicExtractor BasicExtractor.java:61 - extracted value ([balance2_0_0_] : [NUMERIC]) - [0.00]
+2019-03-20T16:48:02,656 TRACE org.hibernate.type.descriptor.sql.BasicExtractor BasicExtractor.java:51 - extracted value ([owner3_0_0_] : [VARCHAR]) - [null]
+2019-03-20T16:48:02,657 TRACE org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl ResultSetProcessorImpl.java:131 - Done processing result set (1 rows)
+2019-03-20T16:48:02,657 TRACE org.hibernate.loader.plan.exec.process.internal.AbstractRowReader AbstractRowReader.java:231 - Total objects hydrated: 1
+2019-03-20T16:48:02,657 DEBUG org.hibernate.engine.internal.TwoPhaseLoad TwoPhaseLoad.java:141 - Resolving associations for [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,657 DEBUG org.hibernate.engine.internal.TwoPhaseLoad TwoPhaseLoad.java:267 - Done materializing entity [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,657 TRACE org.hibernate.loader.plan.exec.process.internal.ResultSetProcessingContextImpl ResultSetProcessingContextImpl.java:330 - Skipping create subselects because there are fewer than 2 results, so query by key is more efficient.
+2019-03-20T16:48:02,657 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:91 - Releasing result set [rs21: org.h2.result.LocalResult@6dd1f638 columns: 3 rows: 1 pos: 1]
+2019-03-20T16:48:02,658 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:132 - Closing result set [rs21: org.h2.result.LocalResult@6dd1f638 columns: 3 rows: 1 pos: 1]
+2019-03-20T16:48:02,658 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:68 - Releasing statement [prep22: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=? {1: 3}]
+2019-03-20T16:48:02,658 DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:73 - HHH000387: ResultSet&apos;s statement was not registered
+2019-03-20T16:48:02,658 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:148 - Closing prepared statement [prep22: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=? {1: 3}]
+2019-03-20T16:48:02,658 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,658 TRACE org.hibernate.engine.internal.StatefulPersistenceContext StatefulPersistenceContext.java:916 - Initializing non-lazy collections
+2019-03-20T16:48:02,658 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader AbstractLoadPlanBasedEntityLoader.java:189 - Done entity load : com.revolut.account.model.Account#3
+2019-03-20T16:48:02,658 TRACE org.hibernate.event.internal.AbstractSaveEventListener AbstractSaveEventListener.java:484 - Persistent instance of: com.revolut.account.model.Account
+2019-03-20T16:48:02,659 TRACE org.hibernate.event.internal.DefaultMergeEventListener DefaultMergeEventListener.java:191 - Ignoring persistent instance
+2019-03-20T16:48:02,659 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl TransactionImpl.java:66 - committing
+2019-03-20T16:48:02,659 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:144 - ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+2019-03-20T16:48:02,659 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:2381 - SessionImpl#beforeTransactionCompletion()
+2019-03-20T16:48:02,659 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:474 - Automatically flushing session
+2019-03-20T16:48:02,659 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:67 - Flushing session
+2019-03-20T16:48:02,659 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:132 - Processing flush-time cascades
+2019-03-20T16:48:02,659 TRACE org.hibernate.engine.internal.Cascade Cascade.java:80 - Processing cascade ACTION_PERSIST_ON_FLUSH for: com.revolut.account.model.Account
+2019-03-20T16:48:02,659 TRACE org.hibernate.engine.internal.Cascade Cascade.java:130 - Done processing cascade ACTION_PERSIST_ON_FLUSH for: com.revolut.account.model.Account
+2019-03-20T16:48:02,660 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:174 - Dirty checking collections
+2019-03-20T16:48:02,660 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:189 - Flushing entities and processing referenced collections
+2019-03-20T16:48:02,660 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:4201 - com.revolut.account.model.Account.balance is dirty
+2019-03-20T16:48:02,660 TRACE org.hibernate.event.internal.DefaultFlushEntityEventListener DefaultFlushEntityEventListener.java:647 - Found dirty properties [[com.revolut.account.model.Account#3]] : [Ljava.lang.String;@63a28987
+2019-03-20T16:48:02,660 TRACE org.hibernate.event.internal.DefaultFlushEntityEventListener DefaultFlushEntityEventListener.java:265 - Updating entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,660 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:232 - Processing unreferenced collections
+2019-03-20T16:48:02,661 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:249 - Scheduling collection removes/(re)creates/updates
+2019-03-20T16:48:02,661 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:106 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2019-03-20T16:48:02,661 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:113 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2019-03-20T16:48:02,661 DEBUG org.hibernate.internal.util.EntityPrinter EntityPrinter.java:102 - Listing entities:
+2019-03-20T16:48:02,661 DEBUG org.hibernate.internal.util.EntityPrinter EntityPrinter.java:109 - com.revolut.account.model.Account{owner=null, balance=-5.00, id=3}
+2019-03-20T16:48:02,661 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:325 - Executing flush
+2019-03-20T16:48:02,662 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:3049 - Updating entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,662 DEBUG org.hibernate.SQL SqlStatementLogger.java:92 - 
+    update
+        accounts 
+    set
+        balance=?,
+        owner=? 
+    where
+        id=?
+Hibernate: 
+    update
+        accounts 
+    set
+        balance=?,
+        owner=? 
+    where
+        id=?
+2019-03-20T16:48:02,662 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:55 - Registering statement [prep23: update accounts set balance=?, owner=? where id=?]
+2019-03-20T16:48:02,662 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:2640 - Dehydrating entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,663 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:65 - binding parameter [1] as [NUMERIC] - [-5.00]
+2019-03-20T16:48:02,663 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:53 - binding parameter [2] as [VARCHAR] - [null]
+2019-03-20T16:48:02,663 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:65 - binding parameter [3] as [BIGINT] - [3]
+2019-03-20T16:48:02,663 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:68 - Releasing statement [prep23: update accounts set balance=?, owner=? where id=? {1: -5.00, 2: NULL, 3: 3}]
+2019-03-20T16:48:02,663 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:148 - Closing prepared statement [prep23: update accounts set balance=?, owner=? where id=? {1: -5.00, 2: NULL, 3: 3}]
+2019-03-20T16:48:02,664 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,664 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,664 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:357 - Post flush
+2019-03-20T16:48:02,664 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl SynchronizationRegistryStandardImpl.java:55 - SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+2019-03-20T16:48:02,664 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:78 - Preparing to commit transaction via JDBC Connection.commit()
+2019-03-20T16:48:02,664 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:81 - Transaction committed via JDBC Connection.commit()
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:53 - LogicalConnection#afterTransaction
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,665 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:154 - Initiating JDBC connection release from afterTransaction
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:162 - ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl DelegatingBasicLogger.java:159 - SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:53 - LogicalConnection#afterTransaction
+2019-03-20T16:48:02,665 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,665 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:154 - Initiating JDBC connection release from afterTransaction
+2019-03-20T16:48:02,666 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:2394 - SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+2019-03-20T16:48:02,666 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:401 - Closing session [5bb2ff40-2b09-493f-9973-6e97fdc880f6]
+2019-03-20T16:48:02,666 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:173 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@38c9e0d6]
+2019-03-20T16:48:02,666 DEBUG org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:177 - HHH000420: Closing un-released batch
+2019-03-20T16:48:02,666 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,666 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:230 - Closing logical connection
+2019-03-20T16:48:02,666 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:237 - Logical connection closed
+2019-03-20T16:48:02,667 INFO  com.revolut.account.service.impl.AccountServiceImpl AccountServiceImpl.java:106 - withdraw to accountId=3 completed
+2019-03-20T16:48:02,667 TRACE org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl SessionFactoryImpl.java:1192 - Opening Hibernate Session.  tenant=null, owner=null
+2019-03-20T16:48:02,667 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:281 - Opened Session [79b28184-228c-4e09-b1eb-4cbaf8f9e3de] at timestamp: 15530680826
+2019-03-20T16:48:02,667 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl TransactionImpl.java:55 - begin
+2019-03-20T16:48:02,667 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:65 - Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+2019-03-20T16:48:02,668 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:68 - Transaction begun via JDBC Connection.setAutoCommit(false)
+2019-03-20T16:48:02,668 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:140 - ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+2019-03-20T16:48:02,668 TRACE org.hibernate.event.internal.DefaultLoadEventListener DefaultLoadEventListener.java:254 - Loading entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,668 TRACE org.hibernate.event.internal.DefaultLoadEventListener DefaultLoadEventListener.java:435 - Attempting to resolve: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,668 TRACE org.hibernate.event.internal.DefaultLoadEventListener DefaultLoadEventListener.java:473 - Object not resolved in any cache: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,669 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:4000 - Fetching entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,669 DEBUG org.hibernate.SQL SqlStatementLogger.java:92 - 
+    select
+        account0_.id as id1_0_0_,
+        account0_.balance as balance2_0_0_,
+        account0_.owner as owner3_0_0_ 
+    from
+        accounts account0_ 
+    where
+        account0_.id=?
+Hibernate: 
+    select
+        account0_.id as id1_0_0_,
+        account0_.balance as balance2_0_0_,
+        account0_.owner as owner3_0_0_ 
+    from
+        accounts account0_ 
+    where
+        account0_.id=?
+2019-03-20T16:48:02,669 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:55 - Registering statement [prep24: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=?]
+2019-03-20T16:48:02,669 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:333 - Registering last query statement [prep24: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=?]
+2019-03-20T16:48:02,670 TRACE org.hibernate.type.descriptor.sql.BasicBinder BasicBinder.java:65 - binding parameter [1] as [BIGINT] - [3]
+2019-03-20T16:48:02,670 TRACE org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader AbstractLoadPlanBasedLoader.java:287 - Bound [2] parameters total
+2019-03-20T16:48:02,670 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:182 - Registering result set [rs22: org.h2.result.LocalResult@310aee0b columns: 3 rows: 1 pos: -1]
+2019-03-20T16:48:02,670 TRACE org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl ResultSetProcessorImpl.java:117 - Processing result set
+2019-03-20T16:48:02,671 DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl ResultSetProcessorImpl.java:120 - Starting ResultSet row #0
+2019-03-20T16:48:02,671 DEBUG org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl EntityReferenceInitializerImpl.java:126 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-03-20T16:48:02,671 TRACE org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl EntityReferenceInitializerImpl.java:227 - hydrating entity state
+2019-03-20T16:48:02,671 TRACE org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl EntityReferenceInitializerImpl.java:279 - Initializing object from ResultSet: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,671 TRACE org.hibernate.persister.entity.AbstractEntityPersister AbstractEntityPersister.java:2705 - Hydrating entity: [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,672 TRACE org.hibernate.type.descriptor.sql.BasicExtractor BasicExtractor.java:61 - extracted value ([balance2_0_0_] : [NUMERIC]) - [-5.00]
+2019-03-20T16:48:02,672 TRACE org.hibernate.type.descriptor.sql.BasicExtractor BasicExtractor.java:51 - extracted value ([owner3_0_0_] : [VARCHAR]) - [null]
+2019-03-20T16:48:02,672 TRACE org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl ResultSetProcessorImpl.java:131 - Done processing result set (1 rows)
+2019-03-20T16:48:02,672 TRACE org.hibernate.loader.plan.exec.process.internal.AbstractRowReader AbstractRowReader.java:231 - Total objects hydrated: 1
+2019-03-20T16:48:02,672 DEBUG org.hibernate.engine.internal.TwoPhaseLoad TwoPhaseLoad.java:141 - Resolving associations for [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,672 DEBUG org.hibernate.engine.internal.TwoPhaseLoad TwoPhaseLoad.java:267 - Done materializing entity [com.revolut.account.model.Account#3]
+2019-03-20T16:48:02,673 TRACE org.hibernate.loader.plan.exec.process.internal.ResultSetProcessingContextImpl ResultSetProcessingContextImpl.java:330 - Skipping create subselects because there are fewer than 2 results, so query by key is more efficient.
+2019-03-20T16:48:02,673 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:91 - Releasing result set [rs22: org.h2.result.LocalResult@310aee0b columns: 3 rows: 1 pos: 1]
+2019-03-20T16:48:02,673 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:132 - Closing result set [rs22: org.h2.result.LocalResult@310aee0b columns: 3 rows: 1 pos: 1]
+2019-03-20T16:48:02,673 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:68 - Releasing statement [prep24: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=? {1: 3}]
+2019-03-20T16:48:02,673 DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:73 - HHH000387: ResultSet&apos;s statement was not registered
+2019-03-20T16:48:02,673 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:148 - Closing prepared statement [prep24: select account0_.id as id1_0_0_, account0_.balance as balance2_0_0_, account0_.owner as owner3_0_0_ from accounts account0_ where account0_.id=? {1: 3}]
+2019-03-20T16:48:02,674 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,674 TRACE org.hibernate.engine.internal.StatefulPersistenceContext StatefulPersistenceContext.java:916 - Initializing non-lazy collections
+2019-03-20T16:48:02,674 DEBUG org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader AbstractLoadPlanBasedEntityLoader.java:189 - Done entity load : com.revolut.account.model.Account#3
+2019-03-20T16:48:02,674 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl TransactionImpl.java:66 - committing
+2019-03-20T16:48:02,674 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:144 - ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+2019-03-20T16:48:02,674 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:2381 - SessionImpl#beforeTransactionCompletion()
+2019-03-20T16:48:02,674 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:474 - Automatically flushing session
+2019-03-20T16:48:02,674 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:67 - Flushing session
+2019-03-20T16:48:02,674 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:132 - Processing flush-time cascades
+2019-03-20T16:48:02,674 TRACE org.hibernate.engine.internal.Cascade Cascade.java:80 - Processing cascade ACTION_PERSIST_ON_FLUSH for: com.revolut.account.model.Account
+2019-03-20T16:48:02,675 TRACE org.hibernate.engine.internal.Cascade Cascade.java:130 - Done processing cascade ACTION_PERSIST_ON_FLUSH for: com.revolut.account.model.Account
+2019-03-20T16:48:02,675 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:174 - Dirty checking collections
+2019-03-20T16:48:02,675 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:189 - Flushing entities and processing referenced collections
+2019-03-20T16:48:02,675 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:232 - Processing unreferenced collections
+2019-03-20T16:48:02,675 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:249 - Scheduling collection removes/(re)creates/updates
+2019-03-20T16:48:02,676 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:106 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2019-03-20T16:48:02,676 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:113 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2019-03-20T16:48:02,676 DEBUG org.hibernate.internal.util.EntityPrinter EntityPrinter.java:102 - Listing entities:
+2019-03-20T16:48:02,676 DEBUG org.hibernate.internal.util.EntityPrinter EntityPrinter.java:109 - com.revolut.account.model.Account{owner=null, balance=-5.00, id=3}
+2019-03-20T16:48:02,676 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:325 - Executing flush
+2019-03-20T16:48:02,676 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-03-20T16:48:02,676 TRACE org.hibernate.event.internal.AbstractFlushingEventListener AbstractFlushingEventListener.java:357 - Post flush
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl SynchronizationRegistryStandardImpl.java:55 - SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:78 - Preparing to commit transaction via JDBC Connection.commit()
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:81 - Transaction committed via JDBC Connection.commit()
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:53 - LogicalConnection#afterTransaction
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,677 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:154 - Initiating JDBC connection release from afterTransaction
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl JdbcResourceLocalTransactionCoordinatorImpl.java:162 - ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+2019-03-20T16:48:02,677 TRACE org.hibernate.resource.transaction.internal.SynchronizationRegistryStandardImpl DelegatingBasicLogger.java:159 - SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+2019-03-20T16:48:02,678 TRACE org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor AbstractLogicalConnectionImplementor.java:53 - LogicalConnection#afterTransaction
+2019-03-20T16:48:02,678 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,678 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:154 - Initiating JDBC connection release from afterTransaction
+2019-03-20T16:48:02,678 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:2394 - SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+2019-03-20T16:48:02,678 TRACE org.hibernate.internal.SessionImpl SessionImpl.java:401 - Closing session [79b28184-228c-4e09-b1eb-4cbaf8f9e3de]
+2019-03-20T16:48:02,678 TRACE org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl JdbcCoordinatorImpl.java:173 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@1a8df0b3]
+2019-03-20T16:48:02,678 TRACE org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl ResourceRegistryStandardImpl.java:286 - Releasing JDBC resources
+2019-03-20T16:48:02,678 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:230 - Closing logical connection
+2019-03-20T16:48:02,678 TRACE org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl LogicalConnectionManagedImpl.java:237 - Logical connection closed
+2019-03-20T16:48:02,678 INFO  com.revolut.account.service.impl.AccountServiceImpl AccountServiceImpl.java:110 - Account found
+</system-out>
+  </testcase>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testGetBalance" time="0.022"/>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testAmountMustBePositiveOnly" time="0.012"/>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testDesposit" time="0.074"/>
+  <testcase classname="com.revolut.account.ServiceTest.AccountServiceTest" name="testNewAccountShouldHaveZeroBalance" time="0.016"/>
+</testsuite>

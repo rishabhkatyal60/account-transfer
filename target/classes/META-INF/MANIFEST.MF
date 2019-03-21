@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Built-By: 01204319
+Build-Jdk: 10.0.2
+Class-Path: lib/jersey-container-grizzly2-http-2.23.2.jar lib/javax.in
+ ject-2.5.0-b05.jar lib/grizzly-http-server-2.3.23.jar lib/grizzly-htt
+ p-2.3.23.jar lib/grizzly-framework-2.3.23.jar lib/jersey-common-2.23.
+ 2.jar lib/javax.annotation-api-1.2.jar lib/jersey-guava-2.23.2.jar li
+ b/hk2-api-2.5.0-b05.jar lib/hk2-utils-2.5.0-b05.jar lib/aopalliance-r
+ epackaged-2.5.0-b05.jar lib/hk2-locator-2.5.0-b05.jar lib/osgi-resour
+ ce-locator-1.0.1.jar lib/jersey-server-2.23.2.jar lib/jersey-client-2
+ .23.2.jar lib/jersey-media-jaxb-2.23.2.jar lib/validation-api-1.1.0.F
+ inal.jar lib/javax.ws.rs-api-2.0.1.jar lib/jersey-media-moxy-2.23.2.j
+ ar lib/jersey-entity-filtering-2.23.2.jar lib/org.eclipse.persistence
+ .moxy-2.6.0.jar lib/org.eclipse.persistence.core-2.6.0.jar lib/org.ec
+ lipse.persistence.asm-2.6.0.jar lib/javax.json-1.0.4.jar lib/h2-1.4.1
+ 92.jar lib/hibernate-core-5.2.2.Final.jar lib/jboss-logging-3.3.0.Fin
+ al.jar lib/hibernate-jpa-2.1-api-1.0.0.Final.jar lib/javassist-3.20.0
+ -GA.jar lib/antlr-2.7.7.jar lib/geronimo-jta_1.1_spec-1.1.1.jar lib/j
+ andex-2.0.0.Final.jar lib/classmate-1.3.0.jar lib/dom4j-1.6.1.jar lib
+ /hibernate-commons-annotations-5.0.1.Final.jar lib/cdi-api-1.1.jar li
+ b/el-api-2.2.jar lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar 
+ lib/jsr250-api-1.0.jar lib/javax.inject-1.jar lib/hibernate-entityman
+ ager-5.2.2.Final.jar lib/log4j-slf4j-impl-2.1.jar lib/slf4j-api-1.7.7
+ .jar lib/log4j-api-2.1.jar lib/log4j-core-2.1.jar lib/commons-lang3-3
+ .5.jar lib/jaxb-api-2.2.11.jar lib/jaxb-core-2.2.11.jar lib/jaxb-impl
+ -2.2.11.jar lib/activation-1.1.1.jar
+Main-Class: com.ail.revolut.app.Main
+Created-By: Maven Integration for Eclipse
+
